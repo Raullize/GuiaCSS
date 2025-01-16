@@ -2,12 +2,8 @@
 
 Bem-vindo ao **GuiaCSS**! Este guia tem como objetivo oferecer uma introdução abrangente ao CSS para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam relembrar conceitos fundamentais. Aqui você encontrará conceitos, exemplos práticos e dicas úteis. Vamos lá! 🚀
 
----
-
 ## O que é CSS? 🤔
 O **CSS (Cascading Style Sheets)** é uma linguagem utilizada para estilizar páginas HTML, permitindo definir cores, espaçamentos, fontes, layouts e muito mais. Ele trabalha em conjunto com o HTML para criar interfaces visuais atraentes.
-
----
 
 ## Como criar e usar um arquivo CSS 📂
 1. **Inline CSS**: Adicione estilos diretamente no elemento HTML.
@@ -35,11 +31,9 @@ O **CSS (Cascading Style Sheets)** é uma linguagem utilizada para estilizar pá
    }
    ```
 
----
+## Conceitos Iniciais e Intermediários🌟
 
-## Conceitos Iniciais 🌟
-
-### 1. Cores 🎨
+### Cores 🎨
 Você pode definir cores usando:
 - **Nomes de cores**: `red`, `blue`, `green`.
 - **Hexadecimal**: `#FF5733`.
@@ -54,7 +48,7 @@ h1 {
 }
 ```
 
-### 2. Background e Border 🖼️
+### Background e Border 🖼️
 - **Background** define a cor ou imagem de fundo de um elemento.
 - **Border** adiciona bordas ao redor do elemento.
 
@@ -66,7 +60,7 @@ div {
     border-radius: 5px;
 }
 ```
-### 3. Comentários 📝
+### Comentários 📝
 Os comentários em CSS são úteis para organizar e documentar o código, facilitando a leitura e manutenção. Eles são ignorados pelo navegador durante a execução.
 
 - Para adicionar um comentário, use /* no início e */ no final.
@@ -85,7 +79,7 @@ body {
 } */
 ```
 
-### 4. Box Model 📦
+### Box Model 📦
 O CSS utiliza o **box model** para determinar como os elementos são exibidos na tela. Ele é composto por:
 - **Content**: O conteúdo real.
 - **Padding**: Espaço interno entre o conteúdo e a borda.
@@ -102,7 +96,7 @@ div {
 }
 ```
 
-### 5. Display 🖥️
+### Display 🖥️
 Controla como os elementos são exibidos:
 - `none`: Oculta o elemento.
 - `block`: O elemento ocupa toda a largura disponível.
@@ -119,7 +113,7 @@ div {
 }
 ```
 
-### 6. Seletores Básicos 🎯
+### Seletores Básicos 🎯
 - **Universal**: `*` seleciona todos os elementos.
 - **Tag**: `p` seleciona todas as tags `<p>`.
 - **Classe**: `.minha-classe` seleciona elementos com essa classe.
@@ -140,11 +134,7 @@ p {
 }
 ```
 
----
-
-## Tópicos Intermediários 🚀
-
-### 7. Textos e Fontes ✍️
+### Textos e Fontes ✍️
 Controle estilos como:
 - **Fonte**: `font-family`
 - **Tamanho**: `font-size`
@@ -162,7 +152,7 @@ h1 {
 }
 ```
 
-### 8. Unidades de Medida 📏
+### Unidades de Medida 📏
 - **Relativas**: `em`, `rem`, `%`.
 - **Fixas**: `px`, `cm`, `mm`.
 
@@ -174,7 +164,7 @@ p {
 }
 ```
 
-### 9. Herança 📚
+### Herança 📚
 Algumas propriedades, como `color` e `font`, são herdadas automaticamente de elementos ancestrais. Isso significa que elementos filhos adotam essas propriedades caso elas não sejam definidas explicitamente. No entanto, nem todas as propriedades são herdadas por padrão.
 
 Exemplo:
@@ -195,7 +185,7 @@ p {
 }
 ```
 
-### 10. Especificidade 📊
+### Especificidade 📊
 A especificidade determina qual regra CSS será aplicada quando há conflitos entre seletores. As regras seguem a seguinte prioridade:
 1. Estilos inline (atributo `style` no HTML)
 2. IDs (`#id`)
@@ -218,7 +208,7 @@ h1 {
 ```
 > **Dica**: Evite usar IDs para estilização sempre que possível, pois eles têm alta especificidade e podem dificultar a manutenção do código.
 
-### 11. Seletores Avançados 🔍
+### Seletores Avançados 🔍
 Os seletores avançados permitem que você aplique estilos com maior precisão. Aqui estão alguns exemplos comuns:
 
 #### Filho Direto (`>`)
@@ -247,7 +237,7 @@ h1 ~ p {
 
 > **Nota**: Combine seletores para criar regras ainda mais específicas e poderosas. Por exemplo: `ul > li:first-child` estiliza apenas o primeiro item de uma lista.
 
-### 12. Variáveis 🎛️
+### Variáveis 🎛️
 Defina valores reutilizáveis com `var`:
 ```css
 :root {
@@ -261,7 +251,7 @@ h1 {
 }
 ```
 
-### 13. Básico de Responsividade 📱
+### Básico de Responsividade 📱
 Use media queries para adaptar o layout a diferentes tamanhos de tela:
 ```css
 @media (max-width: 600px) {
