@@ -66,8 +66,26 @@ div {
     border-radius: 5px;
 }
 ```
+### 3. Comentários 📝
+Os comentários em CSS são úteis para organizar e documentar o código, facilitando a leitura e manutenção. Eles são ignorados pelo navegador durante a execução.
 
-### 3. Box Model 📦
+- Para adicionar um comentário, use /* no início e */ no final.
+- Comentários podem ser usados para explicar regras, marcar seções ou desativar partes do código temporariamente.
+
+Exemplo:
+```css
+/* Este é um comentário explicativo */
+body {
+    background-color: #f0f0f0; /* Define a cor de fundo da página */
+}
+
+/* Desativando temporariamente uma regra */
+/* h1 {
+    color: red;
+} */
+```
+
+### 4. Box Model 📦
 O CSS utiliza o **box model** para determinar como os elementos são exibidos na tela. Ele é composto por:
 - **Content**: O conteúdo real.
 - **Padding**: Espaço interno entre o conteúdo e a borda.
@@ -84,7 +102,7 @@ div {
 }
 ```
 
-### 4. Display 🖥️
+### 5. Display 🖥️
 Controla como os elementos são exibidos:
 - `none`: Oculta o elemento.
 - `block`: O elemento ocupa toda a largura disponível.
@@ -101,7 +119,7 @@ div {
 }
 ```
 
-### 5. Seletores Básicos 🎯
+### 6. Seletores Básicos 🎯
 - **Universal**: `*` seleciona todos os elementos.
 - **Tag**: `p` seleciona todas as tags `<p>`.
 - **Classe**: `.minha-classe` seleciona elementos com essa classe.
@@ -126,7 +144,7 @@ p {
 
 ## Tópicos Intermediários 🚀
 
-### 6. Textos e Fontes ✍️
+### 7. Textos e Fontes ✍️
 Controle estilos como:
 - **Fonte**: `font-family`
 - **Tamanho**: `font-size`
@@ -144,7 +162,7 @@ h1 {
 }
 ```
 
-### 7. Unidades de Medida 📏
+### 8. Unidades de Medida 📏
 - **Relativas**: `em`, `rem`, `%`.
 - **Fixas**: `px`, `cm`, `mm`.
 
@@ -156,10 +174,10 @@ p {
 }
 ```
 
-### 8. Herança 📚
+### 9. Herança 📚
 Algumas propriedades, como `color` e `font`, são herdadas automaticamente de elementos ancestrais. Isso significa que elementos filhos adotam essas propriedades caso elas não sejam definidas explicitamente. No entanto, nem todas as propriedades são herdadas por padrão.
 
-### Exemplo:
+Exemplo:
 ```css
 body {
     color: black; /* Essa cor é herdada pelos elementos filhos */
@@ -177,14 +195,14 @@ p {
 }
 ```
 
-### 9. Especificidade 📊
+### 10. Especificidade 📊
 A especificidade determina qual regra CSS será aplicada quando há conflitos entre seletores. As regras seguem a seguinte prioridade:
 1. Estilos inline (atributo `style` no HTML)
 2. IDs (`#id`)
 3. Classes, pseudo-classes e atributos (`.classe`, `:hover`, `[atributo]`)
 4. Elementos e pseudo-elementos (`div`, `h1`, `::before`)
 
-### Exemplo:
+Exemplo:
 ```css
 body {
     color: black;
@@ -200,10 +218,10 @@ h1 {
 ```
 > **Dica**: Evite usar IDs para estilização sempre que possível, pois eles têm alta especificidade e podem dificultar a manutenção do código.
 
-### 10. Seletores Avançados 🔍
+### 11. Seletores Avançados 🔍
 Os seletores avançados permitem que você aplique estilos com maior precisão. Aqui estão alguns exemplos comuns:
 
-### Filho Direto (`>`)
+#### Filho Direto (`>`)
 Aplica estilos apenas aos elementos que são filhos diretos de outro elemento.
 ```css
 ul > li {
@@ -211,7 +229,7 @@ ul > li {
 }
 ```
 
-### Irmão Adjacente (`+`)
+#### Irmão Adjacente (`+`)
 Aplica estilos ao elemento que é imediatamente seguinte a outro elemento.
 ```css
 h1 + p {
@@ -219,7 +237,7 @@ h1 + p {
 }
 ```
 
-### Irmão Geral (`~`)
+#### Irmão Geral (`~`)
 Aplica estilos a todos os elementos que são irmãos posteriores de outro elemento.
 ```css
 h1 ~ p {
@@ -229,7 +247,7 @@ h1 ~ p {
 
 > **Nota**: Combine seletores para criar regras ainda mais específicas e poderosas. Por exemplo: `ul > li:first-child` estiliza apenas o primeiro item de uma lista.
 
-### 11. Variáveis 🎛️
+### 12. Variáveis 🎛️
 Defina valores reutilizáveis com `var`:
 ```css
 :root {
@@ -243,7 +261,7 @@ h1 {
 }
 ```
 
-## 12. Básico de Responsividade 📱
+### 13. Básico de Responsividade 📱
 Use media queries para adaptar o layout a diferentes tamanhos de tela:
 ```css
 @media (max-width: 600px) {
