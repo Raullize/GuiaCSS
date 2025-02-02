@@ -1,4 +1,4 @@
-# GuiaCSS 🌈
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2965F1&height=180&section=header&text=GuiaCSS&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
 Bem-vindo ao **GuiaCSS**! Este guia tem como objetivo oferecer uma introdução abrangente ao CSS para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam relembrar conceitos fundamentais. Aqui você encontrará conceitos, exemplos práticos e dicas úteis. Vamos lá! 🚀
 
@@ -272,3 +272,4 @@ Esperamos que este guia tenha sido útil para você! 😄 Continuaremos expandin
 
 🎯 Contribuições são bem-vindas! Caso queira adicionar algo, faça um pull request no repositório.
 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2965F1&height=120&section=footer"/>
