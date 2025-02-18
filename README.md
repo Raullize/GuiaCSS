@@ -1,5 +1,7 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2965F1&height=180&section=header&text=GuiaCSS&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
+# 🎨 GuiaCSS
+
 Bem-vindo ao **GuiaCSS**! Este guia tem como objetivo oferecer uma introdução abrangente ao CSS para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam relembrar conceitos fundamentais. Aqui você encontrará conceitos, exemplos práticos e dicas úteis. Vamos lá! 🚀
 
 ## O que é CSS? 🤔
@@ -31,7 +33,7 @@ O **CSS (Cascading Style Sheets)** é uma linguagem utilizada para estilizar pá
    }
    ```
 
-## Conceitos Iniciais e Intermediários🌟
+## Conceitos Iniciais e Intermediários 🌟
 
 ### Cores 🎨
 Você pode definir cores usando:
@@ -60,11 +62,9 @@ div {
     border-radius: 5px;
 }
 ```
+
 ### Comentários 📝
 Os comentários em CSS são úteis para organizar e documentar o código, facilitando a leitura e manutenção. Eles são ignorados pelo navegador durante a execução.
-
-- Para adicionar um comentário, use /* no início e */ no final.
-- Comentários podem ser usados para explicar regras, marcar seções ou desativar partes do código temporariamente.
 
 Exemplo:
 ```css
@@ -72,192 +72,77 @@ Exemplo:
 body {
     background-color: #f0f0f0; /* Define a cor de fundo da página */
 }
-
-/* Desativando temporariamente uma regra */
-/* h1 {
-    color: red;
-} */
 ```
 
-### Box Model 📦
-O CSS utiliza o **box model** para determinar como os elementos são exibidos na tela. Ele é composto por:
-- **Content**: O conteúdo real.
-- **Padding**: Espaço interno entre o conteúdo e a borda.
-- **Border**: A borda do elemento.
-- **Margin**: Espaço externo entre o elemento e outros.
+### 📐 Unidades de Medida
+- **Absolutas**: `px`, `cm`, `mm`, `in` (não se ajustam ao tamanho da tela).
+- **Relativas**: `em`, `rem`, `%`, `vw`, `vh`, `vmin`, `vmax` (se ajustam dinamicamente).
 
 Exemplo:
 ```css
-div {
-    width: 200px;
-    padding: 10px;
-    border: 5px solid black;
-    margin: 20px;
+.container {
+    width: 80vw; /* 80% da largura da tela */
+    font-size: 1.5rem; /* 1.5 vezes o tamanho da fonte raiz */
 }
 ```
 
-### Display 🖥️
-Controla como os elementos são exibidos:
-- `none`: Oculta o elemento.
-- `block`: O elemento ocupa toda a largura disponível.
-- `inline`: O elemento ocupa apenas o espaço do seu conteúdo.
-- `inline-block`: Comporta-se como `inline`, mas permite aplicar propriedades de largura e altura.
+### 📐 Flexbox
+Modelo de layout flexível ideal para alinhamento e distribuição de espaço.
 
-Exemplo:
+Exemplo básico:
 ```css
-div {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+.container {
+    display: flex;
+    justify-content: center; /* Alinha no eixo principal */
+    align-items: center; /* Alinha no eixo cruzado */
+}
+```
+
+### 📊 Grid Layout
+Sistema CSS Grid para criar layouts em duas dimensões.
+
+Exemplo básico:
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+```
+
+### 🧑‍🔬 Animações e Transições
+Adicione movimentos suaves aos elementos.
+
+Exemplo de transição:
+```css
+button {
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
     background-color: coral;
 }
 ```
 
-### Seletores Básicos 🎯
-- **Universal**: `*` seleciona todos os elementos.
-- **Tag**: `p` seleciona todas as tags `<p>`.
-- **Classe**: `.minha-classe` seleciona elementos com essa classe.
-- **ID**: `#meu-id` seleciona o elemento com esse ID.
-
-Exemplo:
+Exemplo de animação:
 ```css
-p {
-    color: green;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.minha-classe {
-    font-size: 16px;
-}
-
-#meu-id {
-    text-align: center;
+.box {
+    animation: fadeIn 1s ease-in-out;
 }
 ```
 
-### Textos e Fontes ✍️
-Controle estilos como:
-- **Fonte**: `font-family`
-- **Tamanho**: `font-size`
-- **Estilo**: `font-style`
-- **Peso**: `font-weight`
-- **Alinhamento**: `text-align`
+### 📱 Responsividade Avançada
+Técnicas como `clamp()`, `min()`, `max()` para adaptar elementos ao tamanho da tela.
 
-Exemplo:
+Exemplo com `clamp()`:
 ```css
 h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
-```
-
-### Unidades de Medida 📏
-- **Relativas**: `em`, `rem`, `%`.
-- **Fixas**: `px`, `cm`, `mm`.
-
-Exemplo:
-```css
-p {
-    font-size: 1.2em;
-    margin: 10px;
-}
-```
-
-### Herança 📚
-Algumas propriedades, como `color` e `font`, são herdadas automaticamente de elementos ancestrais. Isso significa que elementos filhos adotam essas propriedades caso elas não sejam definidas explicitamente. No entanto, nem todas as propriedades são herdadas por padrão.
-
-Exemplo:
-```css
-body {
-    color: black; /* Essa cor é herdada pelos elementos filhos */
-}
-
-h1 {
-    font-size: 24px; /* Não herdado, pois font-size não é uma propriedade herdável */
-}
-```
-Se você quiser que uma propriedade não herdável seja aplicada a todos os elementos filhos, é possível usar `inherit`:
-
-```css
-p {
-    font-size: inherit; /* Herda o tamanho de fonte do elemento pai */
-}
-```
-
-### Especificidade 📊
-A especificidade determina qual regra CSS será aplicada quando há conflitos entre seletores. As regras seguem a seguinte prioridade:
-1. Estilos inline (atributo `style` no HTML)
-2. IDs (`#id`)
-3. Classes, pseudo-classes e atributos (`.classe`, `:hover`, `[atributo]`)
-4. Elementos e pseudo-elementos (`div`, `h1`, `::before`)
-
-Exemplo:
-```css
-body {
-    color: black;
-}
-
-h1 {
-    color: blue; /* Sobrescreve o color herdado do body */
-}
-
-#titulo {
-    color: red; /* Sobrescreve o color definido pelo seletor h1 */
-}
-```
-> **Dica**: Evite usar IDs para estilização sempre que possível, pois eles têm alta especificidade e podem dificultar a manutenção do código.
-
-### Seletores Avançados 🔍
-Os seletores avançados permitem que você aplique estilos com maior precisão. Aqui estão alguns exemplos comuns:
-
-#### Filho Direto (`>`)
-Aplica estilos apenas aos elementos que são filhos diretos de outro elemento.
-```css
-ul > li {
-    color: red; /* Apenas os li que são filhos diretos de ul serão afetados */
-}
-```
-
-#### Irmão Adjacente (`+`)
-Aplica estilos ao elemento que é imediatamente seguinte a outro elemento.
-```css
-h1 + p {
-    font-style: italic; /* Aplica apenas ao primeiro parágrafo após h1 */
-}
-```
-
-#### Irmão Geral (`~`)
-Aplica estilos a todos os elementos que são irmãos posteriores de outro elemento.
-```css
-h1 ~ p {
-    color: gray; /* Aplica a todos os parágrafos após h1 */
-}
-```
-
-> **Nota**: Combine seletores para criar regras ainda mais específicas e poderosas. Por exemplo: `ul > li:first-child` estiliza apenas o primeiro item de uma lista.
-
-### Variáveis 🎛️
-Defina valores reutilizáveis com `var`:
-```css
-:root {
-    --primary-color: #3498db;
-    --font-size: 16px;
-}
-
-h1 {
-    color: var(--primary-color);
-    font-size: var(--font-size);
-}
-```
-
-### Básico de Responsividade 📱
-Use media queries para adaptar o layout a diferentes tamanhos de tela:
-```css
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
+    font-size: clamp(1rem, 2.5vw, 3rem);
 }
 ```
 
