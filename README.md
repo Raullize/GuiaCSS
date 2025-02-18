@@ -4,10 +4,10 @@
 
 Bem-vindo ao **GuiaCSS**! Este guia tem como objetivo oferecer uma introdução abrangente ao CSS para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam relembrar conceitos fundamentais. Aqui você encontrará conceitos, exemplos práticos e dicas úteis. Vamos lá! 🚀
 
-## O que é CSS? 🤔
+## 🤔 O que é CSS?
 O **CSS (Cascading Style Sheets)** é uma linguagem utilizada para estilizar páginas HTML, permitindo definir cores, espaçamentos, fontes, layouts e muito mais. Ele trabalha em conjunto com o HTML para criar interfaces visuais atraentes.
 
-## Como criar e usar um arquivo CSS 📂
+## 📂 Como criar e usar um arquivo CSS
 1. **Inline CSS**: Adicione estilos diretamente no elemento HTML.
    ```html
    <p style="color: red; font-size: 20px;">Texto com estilo inline</p>
@@ -33,9 +33,9 @@ O **CSS (Cascading Style Sheets)** é uma linguagem utilizada para estilizar pá
    }
    ```
 
-## Conceitos Iniciais e Intermediários 🌟
+## 🌟 Conceitos Iniciais e Intermediários
 
-### Cores 🎨
+### 🎨 Cores
 Você pode definir cores usando:
 - **Nomes de cores**: `red`, `blue`, `green`.
 - **Hexadecimal**: `#FF5733`.
@@ -50,7 +50,7 @@ h1 {
 }
 ```
 
-### Background e Border 🖼️
+### 🖼️ Background e Border
 - **Background** define a cor ou imagem de fundo de um elemento.
 - **Border** adiciona bordas ao redor do elemento.
 
@@ -63,7 +63,7 @@ div {
 }
 ```
 
-### Comentários 📝
+### 📝 Comentários
 Os comentários em CSS são úteis para organizar e documentar o código, facilitando a leitura e manutenção. Eles são ignorados pelo navegador durante a execução.
 
 Exemplo:
@@ -74,7 +74,7 @@ body {
 }
 ```
 
-### 📐 Unidades de Medida
+### 📏 Unidades de Medida
 - **Absolutas**: `px`, `cm`, `mm`, `in` (não se ajustam ao tamanho da tela).
 - **Relativas**: `em`, `rem`, `%`, `vw`, `vh`, `vmin`, `vmax` (se ajustam dinamicamente).
 
@@ -146,7 +146,7 @@ h1 {
 }
 ```
 
-## Links úteis 🔗
+## 🔗 Links úteis
 - [MDN Web Docs - CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [CSS Tricks](https://css-tricks.com/)
 - [Can I Use](https://caniuse.com/)
@@ -158,3 +158,4 @@ Esperamos que este guia tenha sido útil para você! 😄 Continuaremos expandin
 🎯 Contribuições são bem-vindas! Caso queira adicionar algo, faça um pull request no repositório.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=2965F1&height=120&section=footer"/>
+
