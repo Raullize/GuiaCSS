@@ -16,6 +16,7 @@ Bem-vindo ao **GuiaCSS**! ✌️ Este guia tem como objetivo oferecer uma introd
 8. [📊 Grid Layout](contents/grid-layout.md) 🏗️
 9. [🧑‍🔬 Animações e Transições](contents/animacoes-e-transicoes.md) ✨
 10. [📱 Responsividade Avançada](contents/responsividade-avancada.md) 📲
+11. [🧹 Clean Code em CSS](contents/clean-code-css.md) ✨
 
 <h2 id="o-que-e-css"> 🤔 O que é CSS? 💭</h2>
 
